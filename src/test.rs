@@ -75,8 +75,8 @@ fn timestamp() {
 
 #[test]
 fn sample1() {
-  let sample1 = include_str!("../test/sample1.vtt");
-  let file = parse_file(sample1).unwrap();
+  let sample = include_str!("../test/sample1.vtt");
+  let file = parse_file(sample).unwrap();
   println!("{file:#?}");
 }
 
