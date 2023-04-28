@@ -1,3 +1,7 @@
+//! This crate implements a bare-bones WebVTT parser. It is missing a few
+//! features, notably support for regions, styles, and most types of settings
+//! that are applicable to cues.
+
 use std::{iter::Peekable, time::Duration};
 
 use thiserror::Error;
@@ -65,6 +69,7 @@ struct FileContext {
     in_header: bool,
 }
 
+/// Parses a string as a WebVTT file.
 pub fn parse_file(input: &str) -> Result<File, Error> {
     use Error::*;
 
