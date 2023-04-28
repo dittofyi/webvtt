@@ -2,6 +2,9 @@
 name = "webvtt"
 version = "0.2.0"
 edition = "2021"
+description = "A bare-bones WebVTT parser"
+license = "MIT"
+authors = ["Ibiyemi Abiodun <ibiyemi@ditto.fyi>"]
 
 [dependencies]
 thiserror = "1"
